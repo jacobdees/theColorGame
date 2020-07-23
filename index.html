@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/style.css" />
     <title>The Color Game</title>
@@ -12,9 +12,9 @@
 <body>
 
 <!-- TITLE -->
-    <div class="container">
-        <div class="row">
-            <div class="col">
+    <div class="container-fluid d-flex justify-content-center align-items-center" id="title">
+        <div class="row title">
+            <div class="col text-center">
                 <h2>The Great</h2>
                 <h1 id="mysteryColor">RGB</h1>
                 <h2>Guessing Game</h2>
@@ -23,19 +23,19 @@
     </div>
 
 <!-- OPTIONS -->
-<div class="container">
-    <div class="row">
-        <div class="col">
+<div class="container-fluid" id="options">
+    <div class="row d-flex justify-content-center">
+        <div class="col-2 text-center">
             <p id="resetButton">
                 New Colors
             </p>
         </div>
-        <div class="col">
+        <div class="col-2 text-center">
             <p id="resultButton">
                 Try Again?
             </p>
         </div>
-        <div class="col">
+        <div class="col-2 text-center">
             <p id="difficultyButtons">
                 <span id="easyDifficultyButton">Easy</span>
                 <span id="hardDifficultyButton">Hard</span>
@@ -45,12 +45,16 @@
 </div>
 
 <!-- COLORS -->
-<div class="container">
-    <div class="row">
-        <div class="col">
+<div class="container-fluid" id="colors">
+    <div class="row d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
             <span id="firstThreeColors">
                 testing#1
             </span>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center" id="colors">
+        <div class="col d-flex justify-content-center">
             <span id="secondThreeColors">
                 testing#2
             </span>

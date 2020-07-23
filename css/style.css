@@ -1,3 +1,28 @@
-h1{
-    color: blue;
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#title{
+    height: 25%;
+    background-color: steelblue;
+    color: whitesmoke;
+}
+
+#options{
+    height: 25px;
+    background-color: whitesmoke;
+    color: steelblue;
+}
+
+#colors{
+    height: 70%;
+    background-color: #222222;
+    color: whitesmoke;
 }
