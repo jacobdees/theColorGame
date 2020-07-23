@@ -3,15 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+    <link rel="stylesheet" href="css/style.css" />
     <title>The Color Game</title>
 </head>
 <body>
-    <h1>testing</h1>
+
+<!-- TITLE -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>The Great</h2>
+                <h1 id="mysteryColor">RGB</h1>
+                <h2>Guessing Game</h2>
+            </div>
+        </div>
+    </div>
+
+<!-- OPTIONS -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <p id="resetButton">
+                New Colors
+            </p>
+        </div>
+        <div class="col">
+            <p id="resultButton">
+                Try Again?
+            </p>
+        </div>
+        <div class="col">
+            <p id="difficultyButtons">
+                <span id="easyDifficultyButton">Easy</span>
+                <span id="hardDifficultyButton">Hard</span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- COLORS -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <span id="firstThreeColors">
+                testing#1
+            </span>
+            <span id="secondThreeColors">
+                testing#2
+            </span>
+        </div>
+    </div>
+</div>
 
 
-
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
