@@ -16,7 +16,7 @@
         <div class="row title">
             <div class="col text-center">
                 <h2>The Great</h2>
-                <h1 id="mysteryColor">RGB</h1>
+                <h1 class="display-4" id="mysteryColor">RGB(<span id="red"></span>, <span id="green"></span>, <span id="blue"></span>)</h1>
                 <h2>Guessing Game</h2>
             </div>
         </div>
@@ -26,19 +26,19 @@
 <div class="container-fluid" id="options">
     <div class="row d-flex justify-content-center">
         <div class="col-2 text-center">
-            <p id="resetButton">
+            <span class="links p-1" id="resetButton">
                 New Colors
-            </p>
+            </span>
         </div>
         <div class="col-2 text-center">
-            <p id="resultButton">
+            <span class="links p-1" id="resultButton">
                 Try Again?
-            </p>
+            </span>
         </div>
         <div class="col-2 text-center">
             <p id="difficultyButtons">
-                <span id="easyDifficultyButton">Easy</span>
-                <span id="hardDifficultyButton">Hard</span>
+                <span class="links p-1" id="easyDifficultyButton">Easy</span>
+                <span class="links p-1 active" id="hardDifficultyButton">Hard</span>
             </p>
         </div>
     </div>

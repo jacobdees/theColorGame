@@ -3,6 +3,7 @@ html, body{
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
+    font-weight: lighter;
 }
 
 body::-webkit-scrollbar {
@@ -25,4 +26,14 @@ body::-webkit-scrollbar {
     height: 70%;
     background-color: #222222;
     color: whitesmoke;
+}
+
+span.links.active{
+    color:white;
+    background-color: steelblue;
+}
+
+span.links:hover{
+    color: white;
+    background-color: steelblue;
 }
