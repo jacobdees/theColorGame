@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <title>The Color Game</title>
-</head>
-<body>
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>The Color Game</title>
+	</head>
+	<body>
+		<!-- TITLE -->
+		<div
+			class="container-fluid d-flex justify-content-center align-items-center"
+			id="title"
+		>
+			<div class="row title">
+				<div class="col text-center">
+					<h2>The Great</h2>
+					<h1 class="display-4" id="mysteryColor">
+						RGB(<span id="red"></span>, <span id="green"></span>,
+						<span id="blue"></span>)
+					</h1>
+					<h2>Guessing Game</h2>
+				</div>
+			</div>
+		</div>
 
-<!-- TITLE -->
-    <div class="container-fluid d-flex justify-content-center align-items-center" id="title">
-        <div class="row title">
-            <div class="col text-center">
-                <h2>The Great</h2>
-                <h1 class="display-4" id="mysteryColor">RGB(<span id="red"></span>, <span id="green"></span>, <span id="blue"></span>)</h1>
-                <h2>Guessing Game</h2>
-            </div>
-        </div>
-    </div>
+		<!-- OPTIONS -->
+		<div class="container" id="options">
+			<div class="row d-flex justify-content-center">
+				<div class="col-md-2 col text-center">
+					<span class="links p-1" id="resetButton">
+						New Colors
+					</span>
+				</div>
+				<div class="col-md-2 d-sm-none d-md-block text-center">
+					<span class="links p-1" id="resultButton">
+						Try Again
+					</span>
+				</div>
+				<div class="col-md-2 col text-center">
+					<p id="difficultyButtons">
+						<span class="links p-1" id="easyDifficultyButton">Easy</span>
+						<span class="links p-1 active" id="hardDifficultyButton">Hard</span>
+					</p>
+				</div>
+			</div>
+		</div>
 
-<!-- OPTIONS -->
-<div class="container-fluid" id="options">
-    <div class="row d-flex justify-content-center">
-        <div class="col-2 text-center">
-            <span class="links p-1" id="resetButton">
-                New Colors
-            </span>
-        </div>
-        <div class="col-2 text-center">
-            <span class="links p-1" id="resultButton">
-                Try Again?
-            </span>
-        </div>
-        <div class="col-2 text-center">
-            <p id="difficultyButtons">
-                <span class="links p-1" id="easyDifficultyButton">Easy</span>
-                <span class="links p-1 active" id="hardDifficultyButton">Hard</span>
-            </p>
-        </div>
-    </div>
-</div>
+		<!-- COLORS -->
+		<div class="container-fluid" id="colors">
+			<div class="row d-flex justify-content-center" id="firstParent">
+				<div class="col d-flex justify-content-center" id="firstThreeColors">
+					<span id="box1" class="m-3 mt-4"></span>
+					<span id="box2" class="m-3 mt-4"></span>
+					<span id="box3" class="m-3 mt-4"></span>
+				</div>
+			</div>
+			<div
+				class="row d-flex justify-content-center"
+				id="colors"
+				id="secondParent"
+			>
+				<div class="col d-flex justify-content-center" id="secondThreeColors">
+					<span id="box4" class="m-3 mt-4"></span>
+					<span id="box5" class="m-3 mt-4"></span>
+					<span id="box6" class="m-3 mt-4"></span>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="winner"></div> -->
 
-<!-- COLORS -->
-<div class="container-fluid" id="colors">
-    <div class="row d-flex justify-content-center">
-        <div class="col d-flex justify-content-center">
-            <span id="firstThreeColors">
-                testing#1
-            </span>
-        </div>
-    </div>
-    <div class="row d-flex justify-content-center" id="colors">
-        <div class="col d-flex justify-content-center">
-            <span id="secondThreeColors">
-                testing#2
-            </span>
-        </div>
-    </div>
-</div>
-
-
-<script src="js/script.js"></script>
-
-</body>
+		<script src="js/script.js"></script>
+	</body>
 </html>
